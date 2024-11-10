@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+#nameList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#nameList li {
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    min-width: 120px;
+    max-width: 200px;
+    color: transparent; /* Hide text initially */
+    background-color: #e0e0e0; /* Hidden box background */
+    transition: all 0.3s ease;
+}
+
+/* Style for when the name is revealed */
+#nameList li.revealed {
+    color: black; /* Reveal the text */
+    background-color: #4CAF50; /* Change background when revealed */
+    border: 2px solid #388E3C; /* Highlight border when revealed */
+    color: white;
+}
+
+/* Additional styling for buttons */
+button#returnButton {
+    background-color: #FF9800; /* Orange color for the return button */
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+/* Hide the names by default */
+.hidden {
+    color: transparent; /* Hide the text */
+    background-color: #f0f0f0; /* Make background visible */
+    border: 1px solid #ccc; /* Add border so you can see the box */
+    user-select: none; /* Prevent text selection or copying */
+}
+
+/* Reveal the winner's name when selected */
+.revealed {
+    color: black; /* Make the text visible */
+    background-color: yellow; /* Highlight the winner */
+}

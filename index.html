@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PALABUNUTAN NG MAÑALAC</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>PALABUNUTAN NG MAÑALAC</h1>
+
+        <!-- List of names (hidden initially) -->
+        <ul id="nameList">
+            <!-- List of names will appear here -->
+        </ul>
+
+        <!-- Button to pick a winner -->
+        <button id="drawButton" disabled>PICK</button>
+
+        <!-- Display the winner -->
+        <h2 id="winner">nabunot mo si: </h2>
+
+        <!-- Button to return the winner back to the list -->
+        <button id="returnButton" disabled>RETURN</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
